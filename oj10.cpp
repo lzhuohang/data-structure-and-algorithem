@@ -44,14 +44,10 @@ int main() {
             }
             dp[i][j].dim1 = dp[i][i].dim1;
             dp[i][j].dim2 = dp[i + 1][j].dim2;
-            int kp = 2147483647; int ki = 2147483647;
             for (int m = i; m < j; m++)//进行递推，计算dp[i][j]的最小乘法次数
             {
-                int flag = 0;
-                if (dp[i][m].mintimes < kp) { kp = dp[i][m].mintimes; flag = 1; }//如果从i到m的最小次数比之前记录的最小次数少，往下进行
-                if (dp[m + 1][j].mintimes < ki) { ki = dp[m + 1][j].mintimes; flag = 1; }//如果从m+1到j的最小次数比之前记录的最小次数少，往下进行
                 if ((dp[i][m].mintimes + dp[m + 1][j].mintimes + dp[i][m].times * dp[i][m].dim1 * dp[i][m].dim2 * dp[m + 1][j].dim2 < min))
-                {//满足前面两个的基础上如果i到m的最小次数加m+1到j的最小次数加这两个状态后2维相乘的次数小于当前最小次数则往下进行
+                {//如果i到m的最小次数加m+1到j的最小次数加这两个状态后2维相乘的次数小于当前最小次数则往下进行
                     int temp = dp[i][m].times;//用temp计算次数
                     int t = (dp[i][m].former | dp[m + 1][j].former) - dp[i][m].former;
                     for (int i1 = 0; i1 < k - 2; i1++)
