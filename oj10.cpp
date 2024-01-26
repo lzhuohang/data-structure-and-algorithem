@@ -14,7 +14,7 @@ int main() {
     ios::sync_with_stdio(false);
     int n, k;
     cin >> n >> k;
-    vector<vector<tensor>> dp(n, vector<tensor>(n)); //将二维数组转化为上三角形式的一维数组，满足关系dp[i][j]=dp[j*(j+1)/2+i]
+    vector<vector<tensor>> dp(n, vector<tensor>(n)); 
     vector<int> fom(k - 2, 1);//存储张量前k-2维的大于1的值
     for (int i = 0; i < n; i++)
     {
