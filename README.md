@@ -1,5 +1,5 @@
 # EE__data-structure-and-algorithem__OJ
-mainly used to recode the code of this course's task(oj),including the description of the question and the code
+mainly used to record the code of this course's task(oj),including the description of the question and the code
 
 the range of tasks is from oj1-oj10 in 2023's autumn seminar and two easy problems which TAs provide for students as examples named oj-1 and oj-2
 
