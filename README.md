@@ -1,10 +1,6 @@
 # EE__data-structure-and-algorithem__OJ
 mainly used to record the code of this course's task(oj),including the description of the question and the code
 
-the range of tasks is from oj1-oj10 in 2023's autumn seminar and two easy problems which TAs provide for students as examples named oj-1 and oj-2
-
-the order of tasks in readme is oj1 to oj10、oj-1、oj-2
-
 ## oj1 丢失的练习册
 **（时间限制: 1000 ms  内存限制: 1800 KB）**
 
